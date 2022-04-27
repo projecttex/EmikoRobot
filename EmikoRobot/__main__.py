@@ -82,9 +82,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʟʟᴏ, ᴀʙᴏᴜᴛ ᴠᴀʀ*
+*ʜᴇʟʟᴏ, ɪ'ᴍ ᴀʙᴏᴜᴛ ᴠᴀʀ*
 ʜɪᴛ /help ᴛᴏ sᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.
-ᴍᴀᴅᴇ ʙʏ url=https://t.me/skpbdt
+ᴍᴀᴅᴇ ʙʏ url="https://t.me/skpbdt"),
 """
 
 buttons = [
@@ -92,7 +92,7 @@ buttons = [
         InlineKeyboardButton(text=f"ᴀʙᴏᴜᴛ ᴠᴀʀ", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="ɢᴇᴛ ʜᴇʟᴘ", callback_data="help_back"),
         InlineKeyboardButton(
             text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/sinisatt"),
     ],
@@ -310,7 +310,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="help_back")]]
                 ),
             )
 
