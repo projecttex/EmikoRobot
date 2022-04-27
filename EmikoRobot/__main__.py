@@ -84,7 +84,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ, ɪ'ᴍ ᴀʙᴏᴜᴛ ᴠᴀʀ*
 ʜɪᴛ /help ᴛᴏ sᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.
-ᴍᴀᴅᴇ ʙʏ url="https://t.me/skpbdt"),
+(text="ᴍᴀᴅᴇ ʙʏ", url="https://t.me/skpbdt"),
 """
 
 buttons = [
