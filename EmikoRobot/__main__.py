@@ -429,7 +429,7 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Emiko support chats*"
+            text="*ᴀʙᴏᴜᴛ ᴠᴀʀ sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ*"
             f"\nJoin My Support Group/Channel for see or report a problem on {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -475,7 +475,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_"),
                  ]
                 ]
             ),
@@ -501,7 +501,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_")
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_")
                  ]
                 ]
             ),
@@ -571,7 +571,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="help_back")]]
             ),
         )
 
@@ -643,7 +643,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Go Back",
+                                text="ɢᴏ ʙᴀᴄᴋ",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
