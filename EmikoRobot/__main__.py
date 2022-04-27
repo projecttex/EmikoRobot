@@ -84,7 +84,6 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ, ɪ'ᴍ ᴀʙᴏᴜᴛ ᴠᴀʀ*
 ʜɪᴛ /help ᴛᴏ sᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.
-(text="ᴍᴀᴅᴇ ʙʏ", url="https://t.me/skpbdt"),
 """
 
 buttons = [
@@ -377,7 +376,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛs", callback_data="emiko_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ", url="https://t.me/aboutusceh"),
+                    InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/skpbdt"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
