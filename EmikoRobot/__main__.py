@@ -82,14 +82,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʟʟᴏ, ɪ'ᴍ ᴅʏʏ x ʙᴏᴛ*
+*ʜᴇʟʟᴏ, ᴀʙᴏᴜᴛ ᴠᴀʀ*
 ʜɪᴛ /help ᴛᴏ sᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.
 ᴍᴀᴅᴇ ʙʏ url=https://t.me/skpbdt
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"ᴀʙᴏᴜᴛ {dispatcher.bot.first_name}", callback_data="emiko_"),
+        InlineKeyboardButton(text=f"ᴀʙᴏᴜᴛ ᴠᴀʀ", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -99,7 +99,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="✚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✚", url=f"t.me/dyyxbot?startgroup=new"),
+            text="✚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✚", url=f"t.me/aboutvarbot?startgroup=new"),
     ],
 ]
 
@@ -194,7 +194,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="help_back")]]
                     ),
                 )
 
@@ -370,15 +370,15 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
+                    InlineKeyboardButton(text="ᴀᴅᴍɪɴs", callback_data="emiko_admin"),
+                    InlineKeyboardButton(text="ɴᴏᴛᴇs", callback_data="emiko_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="emiko_support"),
+                    InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛs", callback_data="emiko_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Maintained By", url="https://t.me/aboutusceh"),
+                    InlineKeyboardButton(text="ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ", url="https://t.me/aboutusceh"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -414,7 +414,7 @@ def emiko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_")]]
             ),
         )
 
@@ -426,7 +426,7 @@ def emiko_about_callback(update, context):
             f"\n\nYou can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_")]]
             ),
         )
     elif query.data == "emiko_support":
@@ -437,11 +437,11 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/sinisatt"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/aboutusceh"),
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/sinisatt"),
+                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇᴅ", url="https://t.me/aboutusceh"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_"),
                  
                  ]
                 ]
